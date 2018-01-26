@@ -1,16 +1,44 @@
 package com.imie.tp.calculator.operation;
 
+/**
+ * 
+ * @author thomas
+ *
+ */
 public class AdditionOperation extends OperationCommandBase {
 
-    @Override
-    public void make(float value) {
-        // TODO Auto-generated method stub
+	/**
+	 * 
+	 */
+	protected float baseValue = 0;
+	
+	/**
+	 * 
+	 */
+	protected float result = 0;
 
+    /**
+	 * @param baseValue
+	 */
+	public AdditionOperation(float baseValue) {
+		super(baseValue);
+		this.baseValue = baseValue;
+	}
+
+	/**
+	 * 
+	 */
+	@Override
+    public void make(float value) {
+		this.result = this.baseValue + value;
+		this.getCurrentValue();
     }
 
+	/**
+	 * 
+	 */
     public float getCurrentValue() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.result;
     }
 
 }

@@ -9,8 +9,9 @@ public final class KeyboardUtils {
 
         System.out.println(displayAsk);
 
+        keyboard.close();
+
         return keyboard.nextLine();
 
-        keyboard.close();
     }
 }

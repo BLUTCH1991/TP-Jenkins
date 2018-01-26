@@ -8,4 +8,5 @@ public abstract class OperationCommandBase implements OperationCommand {
   }
 
   public float currentValue = 10;
+
 }

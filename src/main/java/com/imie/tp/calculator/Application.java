@@ -1,9 +1,16 @@
 package com.imie.tp.calculator;
 
+import java.util.InputMismatchException;
+
+import com.imie.tp.calculator.utils.KeyboardUtils;
+
 public class Application {
 
     public static void main(String[] args) {
-
+    	
+    	Interaction interaction = new Interaction();
+    	interaction.askOperation();
+    	
         // Process...
         // Display & Ask "Type of Operation ":
         //               - 1 : Addition
