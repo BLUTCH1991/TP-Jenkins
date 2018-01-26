@@ -15,6 +15,12 @@ public class Interaction {
 	/**
 	 *
 	 */
+	public Interaction() {
+	}
+
+	/**
+	 *
+	 */
 	public void askOperation() {
 		boolean isNb = false;
 		String answer = new String();

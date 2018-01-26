@@ -10,4 +10,10 @@ package com.imie.tp.calculator.utils;
  */
 public class HistoryManager {
 
+	/**
+	 *
+	 */
+	public HistoryManager() {
+		// TODO Auto-generated constructor stub
+	}
 }
