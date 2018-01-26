@@ -12,17 +12,17 @@ public class SubstractionOperation extends OperationCommandBase {
 	/**
 	 *
 	 */
-	protected float baseValue = 0;
+	protected float baseValue;
 
 	/**
 	 *
 	 */
-	protected float result = 0;
+	protected float result;
 
     /**
 	 * @param baseValue
 	 */
-	public SubstractionOperation(float baseValue) {
+	public SubstractionOperation(final float baseValue) {
 		super(baseValue);
 		this.baseValue = baseValue;
 	}
@@ -31,7 +31,7 @@ public class SubstractionOperation extends OperationCommandBase {
 	 *
 	 */
 	@Override
-    public void make(float value) {
+    public void make(final float value) {
 		this.result = this.baseValue - value;
 		this.getCurrentValue();
     }

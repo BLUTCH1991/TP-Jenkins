@@ -14,6 +14,6 @@ public class HistoryManager {
 	 *
 	 */
 	public HistoryManager() {
-		// TODO Auto-generated constructor stub
+		// Auto-generated constructor stub
 	}
 }

@@ -16,6 +16,7 @@ public class Interaction {
 	 *
 	 */
 	public Interaction() {
+		// Auto-generated constructor stub
 	}
 
 	/**
@@ -23,7 +24,7 @@ public class Interaction {
 	 */
 	public void askOperation() {
 		boolean isNb = false;
-		String answer = new String();
+		String answer = "";
 		int operationChoose = 0;
 
 	    do {

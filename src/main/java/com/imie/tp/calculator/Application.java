@@ -11,7 +11,7 @@ public class Application {
 	 *
 	 * @param args
 	 */
-    public static void main(final String[] args) {
+    public static void main(final String... args) {
     	final Interaction interaction = new Interaction();
     	interaction.askOperation();
     }
