@@ -7,7 +7,6 @@ package com.imie.tp.calculator.operation;
 /**
  *
  * @author thomas
- *
  */
 public class AdditionOperation extends OperationCommandBase {
 
