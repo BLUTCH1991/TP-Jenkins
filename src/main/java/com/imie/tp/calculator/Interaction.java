@@ -16,6 +16,12 @@ import com.imie.tp.calculator.utils.KeyboardUtils;
  */
 public class Interaction {
 
+    /**
+     *
+     * @param calcul
+     * @param firstNb
+     * @param secondNb
+     */
 	public void redirectToOperation(final int calcul, final int firstNb, final int secondNb) {
 	    switch(calcul) {
 	        case 1:
@@ -41,6 +47,9 @@ public class Interaction {
 	        case 5:
 	            System.out.println("History of all operations available soon !");
 	            break;
+            default:
+                System.out.println("Commande non reconnue");
+                break;
 	    }
 	}
 
@@ -78,7 +87,7 @@ public class Interaction {
         do {
             answer = KeyboardUtils.readFromKeyboard(order);
             operationChoose = Integer.parseInt(answer);
-            if ((operationChoose > 0 && operationChoose < 6) || operationChoose == 9){
+            if (operationChoose > 0 && operationChoose < 6 || operationChoose == 9){
                 isNb = true;
             }
         } while (!isNb);
