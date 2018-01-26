@@ -19,22 +19,22 @@ public class Interaction {
 	public void redirectToOperation(int calcul, int firstNb, int secondNb) {
 	    switch(calcul) {
 	        case 1:
-	            AdditionOperation add = new AdditionOperation(firstNb);
+	            final AdditionOperation add = new AdditionOperation(firstNb);
 	            add.make(secondNb);
 	            System.out.println("Le résultat est : " + add.getCurrentValue());
 	            break;
 	        case 2:
-	            SubstractionOperation sub = new SubstractionOperation(firstNb);
+	            final SubstractionOperation sub = new SubstractionOperation(firstNb);
 	            sub.make(secondNb);
 	            System.out.println("Le résultat est : " + sub.getCurrentValue());
 	            break;
 	        case 3:
-	            DivisionOperation div = new DivisionOperation(firstNb);
+	            final DivisionOperation div = new DivisionOperation(firstNb);
 	            div.make(secondNb);
 	               System.out.println("Le résultat est : " + div.getCurrentValue());
 	            break;
 	        case 4:
-	            MultiplicationOperation mult = new MultiplicationOperation(firstNb);
+	            final MultiplicationOperation mult = new MultiplicationOperation(firstNb);
 	            mult.make(secondNb);
                 System.out.println("Le résultat est : " + mult.getCurrentValue());
 	            break;
