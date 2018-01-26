@@ -6,6 +6,7 @@ apply plugin: 'pmd'
 apply plugin: 'checkstyle'
 apply plugin: 'java'
 apply plugin: 'jacoco'
+apply plugin: 'jdepend'
 
 
 repositories {
@@ -29,6 +30,10 @@ findbugs{
 
 jacoco {
     toolVersion "0.7.5.201505241946"
+}
+
+jdepend{
+    ignoreFailures = true
 }
 
 pmd {

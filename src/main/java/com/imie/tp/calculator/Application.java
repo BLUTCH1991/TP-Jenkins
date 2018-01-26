@@ -7,13 +7,13 @@ package com.imie.tp.calculator;
  */
 public class Application {
 
-	/**
-	 *
-	 * @param args
-	 */
+    /**
+     *
+     * @param args
+     */
     public static void main(final String... args) {
-    	final Interaction interaction = new Interaction();
-    	interaction.askOperation();
+        final Interaction interaction = new Interaction();
+        interaction.askOperation();
     }
 
 }

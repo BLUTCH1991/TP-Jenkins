@@ -14,9 +14,9 @@ public class SubstractionOperation extends OperationCommandBase {
 	 */
 	protected float baseValue;
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
 	protected float result;
 
     /**

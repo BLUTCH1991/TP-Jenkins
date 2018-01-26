@@ -9,39 +9,38 @@ package com.imie.tp.calculator.operation;
  */
 public class MultiplicationOperation extends OperationCommandBase {
 
+    /**
+     *
+     */
+    protected float baseValue;
 
-	/**
-	 *
-	 */
-	protected float baseValue;
+    /**
+     *
+     */
+    protected float result;
 
-	/**
-	 *
-	 */
-	protected float result;
+    /**
+     * @param baseValue
+     */
+    public MultiplicationOperation(final float baseValue) {
+        super(baseValue);
+        this.baseValue = baseValue;
+    }
 
-   /**
-	 * @param baseValue
-	 */
-	public MultiplicationOperation(final float baseValue) {
-		super(baseValue);
-		this.baseValue = baseValue;
-	}
+    /**
+     *
+     */
+    @Override
+    public void make(final float value) {
+        this.result = this.baseValue * value;
+        this.getCurrentValue();
+    }
 
-	/**
-	 *
-	 */
-	@Override
-   public void make(final float value) {
-		this.result = this.baseValue * value;
-		this.getCurrentValue();
-   }
-
-	/**
-	 *
-	 */
-   public float getCurrentValue() {
-       return this.result;
-   }
+    /**
+     *
+     */
+    public float getCurrentValue() {
+        return this.result;
+    }
 
 }

@@ -11,12 +11,11 @@ package com.imie.tp.calculator.operation;
  */
 public abstract class OperationCommandBase implements OperationCommand {
 
-	/**
-	 *
-	 * @param baseValue
-	 */
-	public OperationCommandBase(final float baseValue)
-	{
-		//Empty constructor
-	}
+    /**
+     *
+     * @param baseValue
+     */
+    public OperationCommandBase(final float baseValue) {
+        // Empty constructor
+    }
 }
