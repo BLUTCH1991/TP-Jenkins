@@ -38,7 +38,6 @@ public class DivisionOperation extends OperationCommandBase {
 		}else {
 			this.result = this.baseValue / value;
 		}
-		this.getCurrentValue();
    }
 
 	/**

@@ -34,7 +34,6 @@ public class AdditionOperation extends OperationCommandBase {
 	@Override
     public void make(final float value) {
 		this.result = this.baseValue + value;
-		//this.getCurrentValue();
     }
 
 	/**
