@@ -13,11 +13,11 @@ import java.util.Scanner;
  */
 public final class KeyboardUtils {
 
-	/**
-	 *
-	 * @param displayAsk
-	 * @return
-	 */
+    /**
+     *
+     * @param displayAsk
+     * @return
+     */
     public static String readFromKeyboard(final String displayAsk) {
         final Scanner keyboard = new Scanner(System.in);
 
