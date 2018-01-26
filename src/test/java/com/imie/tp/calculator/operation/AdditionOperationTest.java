@@ -1,14 +1,11 @@
 /**
- *
+ *@author thomas
  */
+
 package com.imie.tp.calculator.operation;
 
-import static org.junit.Assert.*;
-
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
@@ -18,7 +15,6 @@ import org.junit.Test;
 public class AdditionOperationTest {
 
 	protected AdditionOperation add;
-
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -35,21 +31,18 @@ public class AdditionOperationTest {
 		this.add = null;
 	}
 
-	/**
-	 *
-	 */
 	@Test
 	public void testMake() {
 		this.add.make(2);
 
 		org.junit.Assert.assertNotNull(this.add);
-		org.junit.Assert.assertEquals(3,this.add.baseValue,2);
+		org.junit.Assert.assertEquals(3, this.add.baseValue, 2);
 	}
 
 	@Test
 	public void testGetValue() {
 		org.junit.Assert.assertNotNull(this.add);
-		org.junit.Assert.assertEquals(1,this.add.getCurrentValue(),2);
+		org.junit.Assert.assertEquals(1, this.add.getCurrentValue(), 2);
 	}
 
 }

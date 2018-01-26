@@ -1,15 +1,13 @@
 /**
- * @author thomas
+ *
  */
-
 package com.imie.tp.calculator.operation;
 
 /**
- *
  * @author thomas
  *
  */
-public class AdditionOperation extends OperationCommandBase {
+public class SubstractionOperation extends OperationCommandBase {
 
 	/**
 	 *
@@ -24,7 +22,7 @@ public class AdditionOperation extends OperationCommandBase {
     /**
 	 * @param baseValue
 	 */
-	public AdditionOperation(float baseValue) {
+	public SubstractionOperation(float baseValue) {
 		super(baseValue);
 		this.baseValue = baseValue;
 	}
@@ -34,8 +32,8 @@ public class AdditionOperation extends OperationCommandBase {
 	 */
 	@Override
     public void make(float value) {
-		this.result = this.baseValue + value;
-		//this.getCurrentValue();
+		this.result = this.baseValue - value;
+		this.getCurrentValue();
     }
 
 	/**
@@ -44,5 +42,5 @@ public class AdditionOperation extends OperationCommandBase {
     public float getCurrentValue() {
         return this.result;
     }
-
 }
+

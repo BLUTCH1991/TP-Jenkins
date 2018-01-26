@@ -1,9 +1,8 @@
 /**
- *
+ * @author thomas
  */
-package com.imie.tp.calculator;
 
-import java.util.InputMismatchException;
+package com.imie.tp.calculator;
 
 import com.imie.tp.calculator.utils.KeyboardUtils;
 
@@ -13,9 +12,12 @@ import com.imie.tp.calculator.utils.KeyboardUtils;
  */
 public class Interaction {
 
+	/**
+	 *
+	 */
 	public void askOperation() {
 		boolean isNb = false;
-		String answer = new String("");
+		String answer = new String();
 		int operationChoose = 0;
 
 	    do {
