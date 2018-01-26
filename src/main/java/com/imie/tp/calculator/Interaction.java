@@ -16,7 +16,7 @@ import com.imie.tp.calculator.utils.KeyboardUtils;
  */
 public class Interaction {
 
-	public void redirectToOperation(int calcul, int firstNb, int secondNb) {
+	public void redirectToOperation(final int calcul, final int firstNb, final int secondNb) {
 	    switch(calcul) {
 	        case 1:
 	            final AdditionOperation add = new AdditionOperation(firstNb);
@@ -31,7 +31,7 @@ public class Interaction {
 	        case 3:
 	            final DivisionOperation div = new DivisionOperation(firstNb);
 	            div.make(secondNb);
-	               System.out.println("Le résultat est : " + div.getCurrentValue());
+	            System.out.println("Le résultat est : " + div.getCurrentValue());
 	            break;
 	        case 4:
 	            final MultiplicationOperation mult = new MultiplicationOperation(firstNb);
@@ -49,7 +49,7 @@ public class Interaction {
 	 * @param order
 	 * @return
 	 */
-	public int getUserNumber(String order) {
+	public int getUserNumber(final String order) {
         boolean isNb = false;
         String answer = "";
         int nb = 0;
@@ -70,7 +70,7 @@ public class Interaction {
 	 * @param order
 	 * @return
 	 */
-	public int getUserChoice(String order) {
+	public int getUserChoice(final String order) {
 	    boolean isNb = false;
         String answer = "";
         int operationChoose = 0;
@@ -94,7 +94,7 @@ public class Interaction {
 	    int secondNb;
 	    int choice;
 
-	    choice = getUserChoice("Choose an operation : \nDisplay & Ask \"Type of Operation \":\n" +
+	    choice = getUserChoice("Type of Operation \":\n" +
 	            "- 1 : Addition\n" +
 	            "- 2 : Subtraction\n" +
 	            "- 3 : Diviside\n" +
@@ -102,7 +102,7 @@ public class Interaction {
 	            "- 5 : Display History\n" +
 	            "- 9 : Quit\n");
 
-	    if(choice == 9) {
+	    if (choice == 9) {
 	        System.out.println("Bye bye !");
             System.exit(0);
 	    }

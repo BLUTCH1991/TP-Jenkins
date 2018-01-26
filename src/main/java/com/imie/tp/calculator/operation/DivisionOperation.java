@@ -33,9 +33,9 @@ public class DivisionOperation extends OperationCommandBase {
 	 */
 	@Override
    public void make(final float value) {
-		if(value == 0) {
+		if (value == 0) {
 			this.result = 1;
-		}else {
+		} else {
 			this.result = this.baseValue / value;
 		}
    }
