@@ -4,6 +4,7 @@
 
 package com.imie.tp.calculator.utils;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -20,10 +21,9 @@ public final class KeyboardUtils {
      */
     public static String readFromKeyboard(final String displayAsk) {
         final Scanner keyboard = new Scanner(System.in);
+        keyboard.useLocale(Locale.ENGLISH);
 
         System.out.println(displayAsk);
-
-        keyboard.close();
 
         return keyboard.nextLine();
 
